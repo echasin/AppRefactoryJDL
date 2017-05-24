@@ -1,0 +1,23 @@
+{
+    "apprefactoryApp": {
+        "personpersonmbr" : {
+            "home": {
+                "title": "Personpersonmbrs",
+                "createLabel": "Create a new Personpersonmbr",
+                "createOrEditLabel": "Create or edit a Personpersonmbr",
+                "search": "Search for Personpersonmbr"
+            },
+            "created": "A new Personpersonmbr is created with identifier {{ param }}",
+            "updated": "A Personpersonmbr is updated with identifier {{ param }}",
+            "deleted": "A Personpersonmbr is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Personpersonmbr {{ id }}?"
+            },
+            "detail": {
+                "title": "Personpersonmbr"
+            },
+            "comment": "Comment",
+            "parentmbr": "Parentmbr"
+        }
+    }
+}

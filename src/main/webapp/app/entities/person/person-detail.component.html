@@ -1,0 +1,29 @@
+
+<div *ngIf="person">
+    <h2><span jhiTranslate="apprefactoryApp.person.detail.title">Person</span> {{person.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="apprefactoryApp.person.name">Name</span></dt>
+        <dd>
+            <span>{{person.name}}</span>
+        </dd>
+        <dt><span jhiTranslate="apprefactoryApp.person.namefirst">Namefirst</span></dt>
+        <dd>
+            <span>{{person.namefirst}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'person/'+ person.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

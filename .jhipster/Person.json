@@ -1,0 +1,36 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "parent",
+            "otherEntityName": "personpersonmbr",
+            "otherEntityRelationshipName": "parentmbr"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 100
+        },
+        {
+            "fieldName": "namefirst",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 100
+        }
+    ],
+    "changelogDate": "20170524184115",
+    "entityTableName": "person",
+    "dto": "no",
+    "pagination": "pager",
+    "service": "no",
+    "microserviceName": "entity",
+    "searchEngine": "elasticsearch"
+}

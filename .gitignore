@@ -1,13 +1,16 @@
 ######################
+# AppRefactory Specific
+######################
+#.gradle/
+#/build/
+#/gradle/
+#/src/
+#/target/
+#/webpack/
+
+######################
 # Project Specific
 ######################
-.gradle/
-/build/
-/gradle/
-/src/
-/target/
-/webpack/
-
 /src/main/webapp/content/css/main.css
 /build/www/**
 /src/test/javascript/coverage/

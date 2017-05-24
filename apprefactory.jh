@@ -1,20 +1,51 @@
 
 // an ignored comment
 /** not an ignored comment */
+
+//Asset Microservice
+entity Asset{
+name String maxlength(50),
+nameshort String maxlength(20),
+description String maxlength(255),
+details String,
+}
+entity Assetstatus{
+name String maxlength(50),
+nameshort String maxlength(20),
+description String maxlength(255),
+}
+
 entity Person {
-name String,
-namefirst String
+name String maxlength(100),
+namefirst String maxlength(100)
 }
 entity Personpersonmbr {
-comment String
+comment String maxlength(255)
+}
+
+entity Organization {
+name String required maxlength(100),
+nameshort String maxlength(20)
 }
 
 
 // defining multiple OneToMany relationships with comments
+
+relationship OneToMany {
+	Assetstatus{Asset} to Asset{Assetstatus(name) required}
+}
+
 relationship OneToMany {
 	Person{Parent} to Personpersonmbr{Parentmbr(name) required}
 }
+
+//Globals
 paginate * with pager
 search * with elasticsearch 
 microservice Person with entity
 microservice Personpersonmbr with entity
+microservice Organization with entity
+
+
+
+

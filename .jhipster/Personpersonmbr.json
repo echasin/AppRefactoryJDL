@@ -1,0 +1,29 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": "required",
+            "relationshipName": "parentmbr",
+            "otherEntityName": "person",
+            "otherEntityField": "name"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "comment",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 255
+        }
+    ],
+    "changelogDate": "20170524184117",
+    "entityTableName": "personpersonmbr",
+    "dto": "no",
+    "pagination": "pager",
+    "service": "no",
+    "microserviceName": "entity",
+    "searchEngine": "elasticsearch"
+}

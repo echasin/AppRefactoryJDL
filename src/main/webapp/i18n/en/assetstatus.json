@@ -1,0 +1,25 @@
+{
+    "apprefactoryApp": {
+        "assetstatus" : {
+            "home": {
+                "title": "Assetstatuses",
+                "createLabel": "Create a new Assetstatus",
+                "createOrEditLabel": "Create or edit a Assetstatus",
+                "search": "Search for Assetstatus"
+            },
+            "created": "A new Assetstatus is created with identifier {{ param }}",
+            "updated": "A Assetstatus is updated with identifier {{ param }}",
+            "deleted": "A Assetstatus is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Assetstatus {{ id }}?"
+            },
+            "detail": {
+                "title": "Assetstatus"
+            },
+            "name": "Name",
+            "nameshort": "Nameshort",
+            "description": "Description",
+            "asset": "Asset"
+        }
+    }
+}
