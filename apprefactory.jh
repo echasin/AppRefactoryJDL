@@ -1,0 +1,20 @@
+
+// an ignored comment
+/** not an ignored comment */
+entity Person {
+name String,
+namefirst String
+}
+entity Personpersonmbr {
+comment String
+}
+
+
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	Person{Parent} to Personpersonmbr{Parentmbr(name) required}
+}
+paginate * with pager
+search * with elasticsearch 
+microservice Person with entity
+microservice Personpersonmbr with entity
